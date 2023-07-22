@@ -1,0 +1,7 @@
+python-dotenv
+langchain
+pinecone-client
+PyPDF2
+gradio
+openai
+tiktoken
