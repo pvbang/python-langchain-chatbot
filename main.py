@@ -25,10 +25,10 @@ with gr.Blocks() as demo:
                     value='Upload', variant='primary')
                 index_clear_btn = gr.components.Button(
                     value='Clear', variant='stop')
-        label = gr.components.Textbox(label='Thông báo')
+        label = gr.components.Textbox(label='Log')
 
-    chatbot = gr.Chatbot(label='Cuộc hội thoại')
-    msg = gr.Textbox(label='Nhập tin nhắn')
+    chatbot = gr.Chatbot(label='Conversations')
+    msg = gr.Textbox(label='Enter question')
     clear = gr.ClearButton([msg, chatbot])
 
     upload.click(create_indexes, [
